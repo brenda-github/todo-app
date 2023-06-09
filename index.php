@@ -32,23 +32,24 @@ foreach ($data['entries'] as $entry) {
 </head>
 
 <body>
-
+<div  class="mainTask">
 
   <header>
-    <h3> WELCOME TO YOUR TODO LIST</h3>
+    <h3>  TODO LIST</h3>
   </header>
-  <div id="taskdiv">
-    <section>
+  <br>
+  
+    
       <h1>Tasks</h1>
       <form action="postTodo.php" method="post" enctype="application/x-www-form-urlencoded">
-        <input type="text" id="task1" name="todo_title" placeholder="Create list">
-        <input type="text" id="task2" name="todo_description" placeholder="Description...">
+        <input type="text" id="task1" name="todo_title" placeholder="Create list" required>
+        <input type="text" id="task1" name="todo_description" placeholder="Description..."required>
         <input type="submit" class="btn" id="task2" placeholder="save task">
       </form>
-    </section>
+      </div>
 
 
-    <div class="container3">
+   <div class="container">
 
       <table class="table">
         <thead>
@@ -119,15 +120,15 @@ foreach ($data['entries'] as $entry) {
         </tbody>
       </table>
 
+      </div>
 
 
 
 
+    
 
-    </div>
-
-  </div>
-
+ 
+    
 </body>
 
 </html>

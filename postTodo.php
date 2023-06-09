@@ -6,7 +6,7 @@ $curl = curl_init();
 include_once('makeId.php');
 $id = generateId();
 
- $date = date_format(date_create(), "Y/m/d");
+ $date = date_format(date_create(), "Y-m-d H:i:s");
 
 $value = array(
     "id" => $id,

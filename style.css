@@ -4,7 +4,7 @@
 }
 body {
     display: flex;
-        align-items: center;
+    align-items: center;
     flex-direction: column;
     background: #6e4b0d;
     min-height: 100vh;
@@ -19,9 +19,12 @@ header {
             width: 100%;
             height: 100%;
 			text-align: center;
-			padding: 20px;
-          
-
+			padding:10px;
+            
+        
+            
+  
+            
 }
 input,button{
     appearance: none;
@@ -29,28 +32,40 @@ input,button{
     outline: none;
     background: none;
 }
+.container{
+   
+    overflow-y: hidden;
+     background: transparent;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: 15px;
+  
 
-#taskdiv{
+}
+
+.maintask{
    
-        position: relative;
-         background: transparent;
-         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        max-width: 900px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        padding: 30px;
-        margin: 0 15px;
-      
-   
+    position:relative;
+     background: transparent;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+    margin: 0 15px;
+  
+
 }
 
 #task1 {
-    flex: 1 1 0%;
+    flex: 1 1 10%;
     background-color: aqua;
     border-radius:2px;
-    margin-right: 12px;
+    margin: 12px;
     height: 30px;
     width: 250px;
     padding: 1rem;
@@ -91,5 +106,55 @@ input,button{
     border-radius: 1rem;
     color: #fff;
     font-size: 15px;
-    margin-right: 10px;  
+    margin: 1px; 
+     
  }
+ table {
+    font-family: arial, sans-serif;
+    font-size: smaller;
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 10px;
+    cursor: pointer;
+    overflow: scroll;
+   
+   
+  }
+  thead{
+    background-color: #ff7200;
+    position: sticky;
+  top: 0;
+  }
+
+  td, th {
+    border: 1px solid #3b3a3a;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #4c4b4b;
+
+  }
+  .headcol {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
+  
+  .long {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    .headcol {
+      width: 100%;
+    }
+  }
+

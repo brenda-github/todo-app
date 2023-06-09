@@ -3,7 +3,7 @@
 $curl = curl_init();
 $id = $_POST['id'];
 
-$date = date_format(date_create(), "Y/m/d");
+$date = date_format(date_create(), "Y-m-d H:i:s");
  $value = array(
     "id" => $_POST['id'],
     "title" => $_POST['todo_title'],

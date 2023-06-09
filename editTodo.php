@@ -33,9 +33,9 @@
         <section>
             <h1>Edit Task</h1>
             <form action="edit.php" method="post" enctype="application/x-www-form-urlencoded" >
-                <input type="text" value="<?php echo $title ?>" id="task1" name="todo_title" />
-                <input type="text" value="<?php echo $description ?>" id="task2" name="todo_description" />
-                <input type="text" value="<?php echo $todoId ?>" id="task2" name="id"/>
+                <input type="text" value="<?php echo $title ?>" id="task1" name="todo_title"  required/>
+                <input type="text" value="<?php echo $description ?>" id="task1" name="todo_description" required/>
+                <input type="text" value="<?php echo $todoId ?>" id="task2" name="id" hidden>
                 <input type="text" value="<?php echo $created ?>" id="task2" name="created" hidden/>
                 <!-- <label>
                     <input style="height: 200; width: 200;" type="checkbox" name="complete" id="checkbox" />
