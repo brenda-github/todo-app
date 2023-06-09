@@ -1,0 +1,95 @@
+
+*{
+   box-sizing: border-box; 
+}
+body {
+    display: flex;
+        align-items: center;
+    flex-direction: column;
+    background: #6e4b0d;
+    min-height: 100vh;
+    color: #f1f1f1;
+    
+}
+
+header {
+            background-color: rgb(208, 134, 22);
+			color: #f1f1f1;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+			text-align: center;
+			padding: 20px;
+          
+
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#taskdiv{
+   
+        position: relative;
+         background: transparent;
+         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        max-width: 900px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 30px;
+        margin: 0 15px;
+      
+   
+}
+
+#task1 {
+    flex: 1 1 0%;
+    background-color: aqua;
+    border-radius:2px;
+    margin-right: 12px;
+    height: 30px;
+    width: 250px;
+    padding: 1rem;
+    
+
+}
+#task1::placeholder{
+    font-size: medium;
+    color: #ffffff;
+}
+
+ #task3{
+    flex: 1 1 0%;
+    background-color: aqua;
+    border-radius:2px;
+    margin-right: 12px;
+    height: 40px;
+    width: 250px;
+    padding: 1rem;
+    color: #9a9898;
+
+ }
+
+ .taskdiv2 .action{
+    margin-top: 20px;
+    display: flex;
+   justify-content: space-between;
+    margin: 4px 0;
+   
+} .taskdiv2 h1 {
+    font-size: 20px;
+}
+ .btn{
+    width: 100px;
+    height: 40px;
+    background:orange;
+    border: 2px solid #ff7200;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;  
+ }
